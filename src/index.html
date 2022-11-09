@@ -12,16 +12,19 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form class="form-1"
+    <form
+     class="form-1"
      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
      method="post"
-     >
+    >
       <fieldset class="field">
 
         <legend>Personal information</legend>
 
-        <label class="form-field">Surname:
-          <input type="text"
+        <label class="form-field">
+          Surname:
+          <input
+           type="text"
            name="Surname"
            autocomplete="off"
           >
@@ -97,21 +100,25 @@
       <fieldset class="field">
 
         <legend>An interesting fact about you!</legend>
-        <label class="form-field">
-          Do you love cars?
-
-
-          <input
-           type="radio"
-            name="cars"
-          >
-            Yes
-          <input
-            type="radio"
-            name="cars"
-          >
-            No
-        </label>
+        <div class="form-field">
+           Do you love cars?
+          <label>
+            <input
+             type="radio"
+             name="cars"
+             value="Yes"
+            >
+              Yes
+          </label>
+          <label>
+            <input
+             type="radio"
+             name="cars"
+             value="No"
+            >
+              No
+          </label>
+        </div>
 
         <label
          class="form-field"
